@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api used by the color picker miniapp to communicate the selected color",
+    "title": "Color picker API",
+    "contact": {
+      "name": "ERN Mobile Platform Team"
+    }
+  },
+  "paths": {
+    "/items": {
+      "get": {
+        "tags": [
+          "ColorPicker"
+        ],
+        "description": "User selected color",
+        "operationId": "getSelectedColor",
+        "responses": {
+          "200": {
+            "description": "selected color",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/events": {
+      "event": {
+        "tags": [
+          "ColorPicker"
+        ],
+        "description": "Fire this event when user picks a color",
+        "operationId": "colorSelected",
+        "parameters": [
+          {
+            "name": "selectedColor",
+            "in": "path",
+            "description": "User selected color",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ern-color-picker-api",
+  "version": "0.0.1",
+  "description": "ERN Generated API for ColorPickerMiniApp",
+  "main": "javascript/src/index.js",
+  "scripts": {
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.47.0"
+  },
+  "dependencies": {
+    "react-native-electrode-bridge": "1.5.x"
+  },
+  "ern": {
+    "message": {
+      "moduleName": "colorpickerApi",
+      "namespace": "com.colorpickerApi.ern",
+      "apiSchemaPath": "schema.json",
+      "artifactId": "react-native-colorpickerApi-api"
+    },
+    "moduleType": "ern-api"
+  },
+  "keywords": [
+    "ern-api"
+  ]
+}
